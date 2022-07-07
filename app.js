@@ -31,10 +31,10 @@ app.post('/players', (req, res) => {
     const { name, lastname, role, team } = req.body.hasOwnProperty();
 
     for (param in req.body) {
-        if (!req.body.hasOwnProperty(param)) {
+        if (!req.body.hasOwnProperty(param))
             error = true
-            break
-        }
+        break
+
     }
 
     const error = name && lastname && role && team
@@ -43,7 +43,7 @@ app.post('/players', (req, res) => {
         status: error ? 'Ok' : 'Bad request, check you parameters'
     }
 
-    res.status(operation).json({ operation: 'add player', statuts: status })
+    res.status(operation).json({ operation: 'add player', status: status })
 });
 
 app.listen(port, () => {
