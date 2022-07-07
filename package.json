@@ -1,0 +1,19 @@
+{
+  "name": "clase-1-intro-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marcos Peña Pollastri",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node": "^18.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
